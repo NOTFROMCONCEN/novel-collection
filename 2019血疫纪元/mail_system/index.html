@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的收件箱 - 邮箱系统</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部标题栏 -->
+        <header class="header">
+            <h1>📧 我的收件箱</h1>
+            <div class="header-info">
+                <span class="unread-count">未读: <span id="unreadCount">0</span></span>
+            </div>
+        </header>
+
+        <!-- 主体内容区 -->
+        <main class="main-content">
+            <!-- 左侧邮件列表 -->
+            <aside class="mail-list">
+                <div class="list-header">
+                    <h2>邮件列表</h2>
+                </div>
+                <div id="mailListContainer" class="mail-items">
+                    <!-- 邮件列表项将通过 JavaScript 动态生成 -->
+                </div>
+            </aside>
+
+            <!-- 右侧邮件详情 -->
+            <section class="mail-detail">
+                <div id="mailDetailContainer" class="detail-container">
+                    <div class="empty-state">
+                        <p>📭</p>
+                        <p>请选择一封邮件查看详情</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Markdown解析库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/mail.js"></script>
+</body>
+
+</html>
