@@ -161,6 +161,12 @@
 
 ---
 
+## 🗂️ 仓库管理
+
+小说仓库与部署迁移清单见 [REPOSITORY_CATALOG.md](./REPOSITORY_CATALOG.md)。该目录集中记录小说仓库、可见性、默认分支及 EdgeOne 迁移检查项。
+
+---
+
 ## 📁 目录结构
 
 ```
